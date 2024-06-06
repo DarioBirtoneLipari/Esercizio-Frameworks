@@ -1,0 +1,23 @@
+ .item1 { grid-area: header; }
+        .item2 { grid-area: main; }
+        .item3 { grid-area: right; }
+        .item4 { grid-area: footer; }
+        .item5 { grid-area: empty; }
+
+        .grid-container {
+            display: grid;
+            grid-template-areas:
+                'header header header header header header'
+                'main main main main empty right'
+                'footer footer footer footer footer footer';
+            gap: 4px;
+            background-color: black;
+            padding:5px;
+        }
+
+        .grid-container > div {
+            background-color: white;
+            text-align: center;
+            padding: 20px 0;
+            font-size: 30px;
+        }
